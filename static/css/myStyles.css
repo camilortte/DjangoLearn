@@ -1,0 +1,163 @@
+ .sidebar-nav {
+  padding: 9px 0;
+}
+
+
+img, video{
+ max-width: 100%;
+}
+
+
+.fade{
+  transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  /*Opacidad*/
+  opacity: 1;
+  /*Para que funcione bien en explorer*/
+  filter: alpha(opacity=10);
+}
+
+
+.fade2{
+  width: 1em;
+  height: 1em;
+}
+
+.fade:hover{
+        /*transform:rotate(360deg);
+        -ms-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        -webkit-transform:rotate(360deg);*/
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        transform: scale(1.5)
+      }
+
+      .logo{
+        background: #3399FF; 
+      }
+
+      .texto_logo{
+        margin-top: 2em;      
+        font-family: 'Clicker Script', cursive;        
+      }
+
+      .texto_logo > h1{
+        font-size: 5em;
+      }
+
+      body {
+        padding-top: 50px;
+        padding-bottom: 40px;
+        background: #fff url("../img/sh5mvcf.png");
+        /*        background: #fff url("img/fondo-interno.jpg");*/
+      }
+
+      .jumbotron {
+        /*background: url("img/fondo.jpg") repeat center center;*/
+        background: #fff url("../img/fondo-interno.jpg");
+        /*height: 20em; */
+        margin-bottom:  1px;
+        border: dashed #57ABB8;
+        border-radius: 2em;
+        /*opacity: .4;*/
+      }
+
+      .redesSociales{
+        height: 5em;
+        width: 5em;
+      }
+
+      .borde{
+        border: dashed #57ABB8;
+      }
+
+      .parrafo{
+        font-family: 'Comfortaa', cursive;
+/*        font-family: "HelveticaNeue-Light", "Helvetica Neue Light";*/
+        font-size: 1.5em;
+        text-align : justify;
+        line-height: 1.3em;
+      }
+
+      .titulo{
+        font-family: 'Clicker Script', cursive;    
+      }
+
+
+      footer{
+        border: 0.1em dashed #57ABB8;
+        border-radius: 5em;
+      }
+
+      .footercontent{
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
+
+      .Three-Dee{
+        text-shadow: 0px 1px 0px #304920;
+        color:  #57ABB8;
+      }
+
+      .Three-Dee:hover{
+        color:  #AAAAA8;
+      }
+
+      
+
+      .titulo2{
+        font-family: 'Comfortaa', cursive;
+        font-size: 2em;
+        text-align : left;
+        line-height: 1em;
+      }
+
+      object{
+        height: 50%;
+        margin:0 auto;
+        width:100%;
+        height:600px;
+      }
+
+
+
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {  
+  .redes{
+        display: inline;        
+    }    
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+     .redes{
+        display: inline;        
+    }
+ }
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+    .texto_logo > h1{
+        font-size: 2.7em;
+    }
+
+    .parrafo{
+        font-size: 1em;
+    }
+ }
+
+@viewport{
+    width: device-width;
+}
+
+@-ms-viewport{
+    width: device-width;
+}

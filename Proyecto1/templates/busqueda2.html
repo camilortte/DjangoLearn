@@ -1,0 +1,43 @@
+{% extends "base.html"%}
+
+{% block title%}Busqueda 2{% endblock %}
+{% block content%}
+	<form action="/busqueda2/" method="get">
+		<input type="text" name="campo"/>
+		<input type="submit" value="Buscar"/>
+	</form>
+
+	{% if errors%}
+		<ul>
+			{% for error in errors %}
+			<li>{{error}}</li>
+			{% endfor %}
+
+		</ul>
+	{%else%}
+		{% if books %}
+			<h1>books</h1>
+			<table>
+				<tr>
+					<th>Titulo</th>
+					<th>Autor</th>
+					<th>Editor</th>
+					<th>Fecha Publicacion</th>
+				</tr>
+
+				{% for book in books%}
+				<tr>
+					<td>{{book.title}}</td>
+					<td>{% for autor in book.autores.all %}{{ autor }}<br/>{% endfor %}</td>					
+					<td>{{book.editores}}</td>
+					<td>{{book.publication_date}}</td>
+				</tr>
+				{%endfor%}
+			</table>
+		{%endif%}
+
+	{% endif %}
+
+
+
+{% endblock %}

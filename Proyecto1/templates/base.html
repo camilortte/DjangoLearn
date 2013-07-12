@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{% block tittle %}{% endblock %}</title>
+	<!-- Estilos -->
+	{% load staticfiles %}		
+	  <link href="{% static "books/css/bootstrap.css" %}" rel="stylesheet">
+	  <link href="{% static "books/css/myStyles.css" %}"rel="stylesheet">  
+	  <link href="{% static "books/css/bootstrap-responsive.css"%}" rel="stylesheet">
+</head>
+<body>
+	<header>
+		{%block encabezado %}<h1>Este es mi primera pagina Web</h1>	{%endblock%}
+	</header>
+
+	<section>
+		<h2>{% block content %}{% endblock %}</h2>	
+	</section>
+	
+	<footer>
+		<h1>Gracias por visitar el sitio.</h1>	
+	</footer>	
+	
+</body>
+</html>

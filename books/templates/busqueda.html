@@ -1,0 +1,21 @@
+{% extends "base.html"%}
+
+{% block title%}Su busqueda{% endblock %}
+
+{% block content%}	
+
+	{% if books %}	    
+	    <ul>	        
+	        <table>
+	        	<tr><th>Titulo</th><th>Fecha</th><th>Editor</th></tr>
+	        	{% for book in books %}
+	        		<tr><td>{{ book.title }}</td><td>{{ book.publication_date}}</td><td> {{book.editores}}</td></tr>
+	        	{% endfor %}
+	        </table>
+	        	
+	        
+	    </ul>
+	{% else %}
+	    <p>No books matched your search criteria.</p>
+	{% endif %}
+{% endblock %}
